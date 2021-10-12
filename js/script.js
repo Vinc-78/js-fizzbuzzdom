@@ -54,18 +54,24 @@ for(let i=1;i<=100;i++){
 
     col.append(box);
 
+    //do caratteristiche base sia di colore che di contenuto ai box
+
     box.textContent=i;
 
     
     box.classList.add("box", "py-4","fs-2","text-dark");
 
+//setto le condizioni per lo style specifico e contenuto
+
+//multipli di 3
+
     if((i%3)===0){ bgColor="rgb(11, 214, 161)";
                    box.textContent="fizz";}
-
+//multipli di 5
 
     else if((i%5)===0){bgColor="rgb(255, 209, 102)";
                        box.textContent="buzz";}
-
+//multipli di 3 e di 5
 
     if(((i%5)===0)&&((i%3)===0)){bgColor="rgb(240, 70, 111)";
                      box.textContent="fizzbuzz";}
