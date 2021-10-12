@@ -38,7 +38,11 @@ row.classList.add("flex-wrap" ,"g-2","gx-2")
 //creo gli elementi col 
 
 
+
 for(let i=1;i<=100;i++){ 
+
+    let bgColor = "rgb(19, 137, 178)";
+  
 
     const col = document.createElement("div");
 
@@ -52,7 +56,23 @@ for(let i=1;i<=100;i++){
 
     box.textContent=i;
 
-    box.classList.add("box", "py-4","fs-3");
+    
+    box.classList.add("box", "py-4","fs-2","text-dark");
+
+    if((i%3)===0){ bgColor="rgb(11, 214, 161)";
+                   box.textContent="fizz";}
+
+
+    else if((i%5)===0){bgColor="rgb(255, 209, 102)";
+                       box.textContent="buzz";}
+
+
+    if(((i%5)===0)&&((i%3)===0)){bgColor="rgb(240, 70, 111)";
+                     box.textContent="fizzbuzz";}
+   
+    box.style.backgroundColor=bgColor;
+
+    
 
     
 
