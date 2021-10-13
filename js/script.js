@@ -48,7 +48,7 @@ for(let i=1;i<=100;i++){
 
     row.append(col);
 
-    col.classList.add("my-col","ratio","ratio-1x1","border","d-flex")
+    col.classList.add("my-col","ratio","ratio-1x1","border")
 
     const box = document.createElement("div");
 

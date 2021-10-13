@@ -1,2 +1,10 @@
+/* Divide il container in 7 blocchi */
+
 .my-col { flex: 0 0 calc((100% / 7) - 20px); 
          margin:10px}
+         
+/* Centra il testo */
+
+.box{    display: flex;
+         justify-content: center;
+         align-items: center; }
